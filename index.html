@@ -1,40 +1,101 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>React JS</h1>
+			</section>
+			<section>
+				<h3>Who created React?</h3>
+				<figure>
+					<img src="https://i.ytimg.com/vi/GW0rj4sNH2w/maxresdefault.jpg" alt="Jordan Walke">
+					<figcaption style="font-size: 1.5rem;">Jordan Walke in JSConfUS 2013</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h3>Why we should use React?</h3>
+			</section>
+			<section>
+				<h2>React features</h2>
+				<h3 class="fragment">Component-based architecture</h3>
+				<img style="width: 50%;" class="fragment"
+					src="https://www.techdiagonal.com/wp-content/uploads/2019/08/React-components-blog-image.jpg"
+					alt="Components">
+			</section>
+			<section data-auto-animate>
+				<h3>JSX</h3>
+				<pre data-id="code-animation">
+					<code>
+						// index.html
+						<div class="container">Hello, world</div>
+
+						// index.js
+						const element = document.querySelector('.container');
+					</code>
+				</pre>
+			</section>
+			<section data-auto-animate>
+				<h3>JSX</h3>
+				<pre data-id="code-animation">
+					<code>
+					// JSX
+					const element = <div>Hello, world</div>
+					</code>
+				</pre>
+			</section>
+			<section>
+				<h3>One-way Data Binding</h3>
+				<div style="background-color: #fff"><img
+						src="https://cdn-images-1.medium.com/max/1600/1*PBgAz9U9SrkINPo-n5glgw.gif" alt=""></div>
+			</section>
+			<section>
+				<h3>Declarative UI</h3>
+			</section>
+			<section>
+				<h3>Virtual Dom</h3>
+				<img class="fragment"
+					src="https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?ssl=1" alt="">
+			</section>
+			<section>
+				<h3>How to use React?</h3>
+			</section>
+			<section>
+				<h3>Conclusion</h3>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
